@@ -18,7 +18,7 @@ public class Main {
         account.withdraw(5);
         System.out.println(account.getBalance());
 
-        // core object oriented concept: abstraction
+        // core object oriented concept: abstraction : reduce complexity
 
     }
 
