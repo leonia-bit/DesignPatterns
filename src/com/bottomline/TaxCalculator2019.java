@@ -1,5 +1,5 @@
 package com.bottomline;
-
+// illustrate implementation for interface OOP concept.
 public class TaxCalculator2019 implements TaxCalculator{
 
     @Override
