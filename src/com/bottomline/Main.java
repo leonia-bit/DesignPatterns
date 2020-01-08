@@ -12,12 +12,13 @@ public class Main {
 	    TaxCalculator calculator = getCalculator();
         System.out.println(calculator.calculateTax());
 
-        // core object oriented meanings
+        // core object oriented concept: encapsulation
         var account = new Account();
-        account.balance = -1;
+        account.deposit(10);
+        account.withdraw(5);
+        System.out.println(account.getBalance());
 
-
-
+        // core object oriented concept: abstraction
 
     }
 
