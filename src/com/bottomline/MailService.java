@@ -2,6 +2,7 @@ package com.bottomline;
 
 // illustrate OOP abstraction concept
 // abstraction: reduce complexity meaning hide the un required details
+// one more benefit of abstraction: changing private methods not main class is not affected.
 public class MailService {
     // illustrate abstraction: only method available to user, other methods hided means private
     public void sendEmail(){
