@@ -61,7 +61,7 @@ public class Main {
         System.out.println(editor.getContent());
 
 
-
+        // design pattern: state
 
 
 
