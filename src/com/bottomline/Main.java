@@ -1,5 +1,8 @@
 package com.bottomline;
 
+import com.bottomline.memento.Editor;
+import com.bottomline.memento.History;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -37,6 +40,31 @@ public class Main {
         drawUIControl(new CheckBox());
 
         // UML: Unified Modeling Lang
+        // Design pattern memento using editor undo operation
+        var editor = new Editor();
+        var history  = new History();
+
+        System.out.println("Start undo test...");
+        editor.setContent("a");
+        history.push(editor.createState());
+        editor.setContent("b");
+        history.push(editor.createState());
+        editor.setContent("c");
+        history.push(editor.createState());
+        editor.setContent("d");
+        history.push(editor.createState());
+
+        editor.restore(history.pop());
+        editor.restore(history.pop());
+        editor.restore(history.pop());
+        editor.restore(history.pop());
+        System.out.println(editor.getContent());
+
+
+
+
+
+
 
 
     }
